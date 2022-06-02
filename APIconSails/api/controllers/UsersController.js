@@ -7,6 +7,9 @@
 
 module.exports = {
   
-
+    getAllUsers: async function (req, res){
+        var misUsuarios = await User.find();
+        res.ok(misUsuarios);
+    }
 };
 
